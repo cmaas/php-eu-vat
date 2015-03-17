@@ -89,4 +89,4 @@ You need to know which type of rate applies to your product or business.
 
 MIT License.
 
-Use at your own risk. The rates are compiled based on the document mentioned above. I take no responsibility for the correctness of any rates.
+Use at your own risk. The rates are compiled based on the document mentioned above. I take no responsibility for the correctness of any rates although I double-checked them as of March 17th, 2015.
