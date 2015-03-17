@@ -8,7 +8,7 @@ All rates are listed here: [http://ec.europa.eu/taxation_customs/resources/docum
 
 ## How to Use
 
-Just grab a copy of EuropeVAT.php, include it in your PHP project and use it. You can either use the class directly to
+Just grab a copy of `EuropeVAT.php`, include it in your PHP project and use it. You can either use the class directly to
 add or subtract taxes like so:
 
     $results[] = EuropeVAT::addTax(100, 'DE');
@@ -25,6 +25,54 @@ Or you can work with the rates data like so:
     $results[] = VATRates::getAllStandardRates();
     // get everything
     $results[] = VATRates::getAll();
+
+## Example Output
+
+    Array
+    (
+        [0] => Array
+            (
+                [taxRate] => 19
+                [taxAmount] => 19
+                [total] => 119
+            )
+
+        [1] => Array
+            (
+                [taxRate] => 10
+                [taxAmount] => 4.4545454545455
+                [netAmount] => 44.545454545455
+            )
+
+        [2] => Array
+            (
+                [taxRate] => 27
+                [taxAmount] => 9.9765
+                [total] => 46.9265
+            )
+
+        [3] => Array
+            (
+                [name] => Luxembourg
+                [superReducedRate] => 3
+                [reducedRate] => Array
+                    (
+                        [0] => 8
+                    )
+
+                [standardRate] => 17
+                [parkingRate] => 14
+                [code] => LU
+            )
+
+        [4] => Array
+            (
+                [BE] => 21
+                [BG] => 20
+                [CZ] => 21
+    ...
+
+See `examples.php`
 
 ## Supported Rates
 
