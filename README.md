@@ -1,7 +1,7 @@
 # EU VAT Calculation Helper Classes
 
 Businesses in the EU need to charge EU customers the VAT rates of the country the customer lives in.
-This changed on January 1st, 2015. `EuropeVAT` has two helper classes to perform some tax calculations
+This changed on January 1st, 2017. `EuropeVAT` has two helper classes to perform some tax calculations
 and get the current rates.
 
 All rates are listed here: [http://ec.europa.eu/taxation_customs/resources/documents/taxation/vat/how_vat_works/rates/vat_rates_en.pdf](http://ec.europa.eu/taxation_customs/resources/documents/taxation/vat/how_vat_works/rates/vat_rates_en.pdf)
@@ -89,4 +89,4 @@ You need to know which type of rate applies to your product or business.
 
 MIT License.
 
-Use at your own risk. The rates are compiled based on the document mentioned above. I take no responsibility for the correctness of any rates although I double-checked them as of March 17th, 2015.
+Use at your own risk. The rates are compiled based on the document mentioned above. I take no responsibility for the correctness of any rates although I double-checked them as of June 23th, 2017.

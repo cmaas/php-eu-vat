@@ -3,8 +3,10 @@
  * Helper classes for calculating EU VAT rates based on official tax regulations, which can be found here:
  * http://ec.europa.eu/taxation_customs/resources/documents/taxation/vat/how_vat_works/rates/vat_rates_en.pdf
  *
+ * Current EU Tax Version: 1st January 2017
+ * 
  * @author Christian Maas <christian@cmaas.de>
- * @copyright 2015 Christian Maas
+ * @copyright 2015, 2017 Christian Maas
  * @license MIT http://opensource.org/licenses/MIT
  */
 
@@ -223,11 +225,19 @@ class VATRates {
             'parkingRate' => null
         ],
 
+        'IE' => [
+            'name' => 'Ireland',
+            'superReducedRate' => 4.8,
+            'reducedRate' => [9, 13.5],
+            'standardRate' => 23,
+            'parkingRate' => 13.5
+        ],
+
         'EL' => [
             'name' => 'Greece',
             'superReducedRate' => null,
-            'reducedRate' => [6.5, 13],
-            'standardRate' => 23,
+            'reducedRate' => [6, 13],
+            'standardRate' => 24,
             'parkingRate' => null
         ],
 
@@ -255,18 +265,10 @@ class VATRates {
             'parkingRate' => null
         ],
 
-        'IE' => [
-            'name' => 'Ireland',
-            'superReducedRate' => 4.8,
-            'reducedRate' => [9, 13.5],
-            'standardRate' => 23,
-            'parkingRate' => 13.5
-        ],
-
         'IT' => [
             'name' => 'Italy',
             'superReducedRate' => 4,
-            'reducedRate' => [10],
+            'reducedRate' => [5, 10],
             'standardRate' => 22,
             'parkingRate' => null
         ],
@@ -330,9 +332,9 @@ class VATRates {
         'AT' => [
             'name' => 'Austria',
             'superReducedRate' => null,
-            'reducedRate' => [10],
+            'reducedRate' => [10, 13],
             'standardRate' => 20,
-            'parkingRate' => 12
+            'parkingRate' => 13
         ],
 
         'PL' => [
@@ -355,7 +357,7 @@ class VATRates {
             'name' => 'Romania',
             'superReducedRate' => null,
             'reducedRate' => [5, 9],
-            'standardRate' => 24,
+            'standardRate' => 19,
             'parkingRate' => null
         ],
 
